@@ -1,0 +1,4 @@
+# Ignore environment files
+.env
+tarotcardapi/serviceaccount.json
+node_modules/
