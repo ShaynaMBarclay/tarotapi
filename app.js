@@ -8,7 +8,10 @@ import errorHandler from './middlewares/errorHandler.js';
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://moonandcards.netlify.app'
+}));
+
 app.use(express.json());
 app.use('/tarotdeck', express.static('images'));
 
