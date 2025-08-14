@@ -26,10 +26,11 @@ Write a mystical, beginner-friendly interpretation of what these cards mean in r
     const result = await model.generateContent(prompt);
     let text = await result.response.text();
     if (text.startsWith("```")) text = text.replace(/^```(\w*)\n/, "").replace(/```$/, "");
-    res.json({ reading: text.trim() });
+      res.json({ reading: text.trim() });
   } catch (error) {
     console.error("Gemini Error:", error);
-    res.status(500).json({ error: "Failed to generate reading." });
+    // Return a user-friendly error instead of crashing
+    res.status(503).json({ reading: "The cards are busy. Please try again in a moment." });
   }
 });
 
