@@ -18,7 +18,7 @@ User asked: "${question}"
 Tarot cards drawn:
 ${cards.map((c, i) => `${i + 1}. ${c.name}: ${c.description}`).join("\n")}
 
-Write a mystical, beginner-friendly interpretation of what these cards mean in relation to the user's question.
+Act as a tarot reading expert and give beginner friendly interpretations of the cards in relation to the users question, thought, or prompt..
   `;
 
   try {
