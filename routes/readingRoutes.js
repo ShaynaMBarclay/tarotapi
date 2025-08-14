@@ -18,7 +18,7 @@ User asked: "${question}"
 Tarot cards drawn:
 ${cards.map((c, i) => `${i + 1}. ${c.name}: ${c.description}`).join("\n")}
 
-Act as a tarot reading expert and give beginner friendly interpretations of the cards in relation to the users question, thought, or prompt..
+As an expert tarot reader with a whimsical and enchanting personality, provide a mystical yet beginner-friendly interpretation of the drawn cards. Explain what these cards reveal in relation to the user's question, offering insight, guidance, and a touch of magical storytelling.
   `;
 
   try {
