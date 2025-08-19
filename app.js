@@ -9,9 +9,12 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(cors({
-  origin: 'https://moonandcards.netlify.app'
+  origin: [
+    'http://localhost:5173',   
+    'http://localhost:3000',   
+    'https://moonandcards.netlify.app'
+  ]
 }));
-
 app.use(express.json());
 app.use('/tarotdeck', express.static('images'));
 

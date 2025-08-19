@@ -19,8 +19,12 @@ User asked: "${question}"
 Tarot cards drawn:
 ${cards.map((c, i) => `${i + 1}. ${c.name}: ${c.description}`).join("\n")}
 
-As an expert tarot reader with a whimsical and enchanting personality, provide a mystical yet beginner-friendly interpretation of the drawn cards. Explain what these cards reveal in relation to the user's question, offering insight, guidance, and a touch of magical storytelling.
-  `;
+As an expert tarot reader with a whimsical and enchanting personality:
+- If only 1 card is drawn, provide a short, focused interpretation.  
+- If 3 cards are drawn, interpret them as a past, present, and future spread.  
+- If 10 cards are drawn, provide a more in-depth reading that ties the themes together as a full Celtic Cross spread.  
+Offer insight, guidance, and a touch of magical storytelling in relation to the user's question.
+`;
 
   try {
     const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
