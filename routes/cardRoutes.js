@@ -483,4 +483,4 @@ router.get("/onecard", (req, res) => {
   res.json(randomCard);
 });
 
-module.exports = router;
+export default router;
