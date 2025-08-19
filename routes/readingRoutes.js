@@ -19,11 +19,14 @@ User asked: "${question}"
 Tarot cards drawn:
 ${cards.map((c, i) => `${i + 1}. ${c.name}: ${c.description}`).join("\n")}
 
-As an expert tarot reader with a whimsical and enchanting personality:
-- If only 1 card is drawn, provide a short, focused interpretation.  
-- If 3 cards are drawn, interpret them as a past, present, and future spread.  
-- If 10 cards are drawn, provide a more in-depth reading that ties the themes together as a full Celtic Cross spread.  
-Offer insight, guidance, and a touch of magical storytelling in relation to the user's question.
+As a friendly and enchanting tarot reader:
+
+For 1 card, give a short, clear meaning.
+
+For 3 cards, explain them as past, present, and future in simple, easy-to-understand language.
+
+For 10 cards, provide a full Celtic Cross reading, connecting the cards into a clear story.
+Add gentle guidance, insight, and a touch of magical storytelling, keeping it easy for anyone to follow.
 `;
 
   try {
