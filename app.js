@@ -10,9 +10,10 @@ const port = process.env.PORT || 3001;
 
 app.use(cors({
   origin: [
-    'http://localhost:5173',   
-    'http://localhost:3000',   
-    'https://moonandcards.netlify.app'
+     'http://localhost:5173',    // local dev
+    'http://localhost:3000',    // another local dev port if used
+    'https://moonandcards.netlify.app',  // old deployed frontend
+    'https://lune.cards'
   ]
 }));
 app.use(express.json());
